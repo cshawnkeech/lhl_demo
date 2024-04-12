@@ -1,30 +1,44 @@
 """
-demo page
+Hello page
 """
-
+import time
 import streamlit as st
 
-st.title('Hello World')
 
-st.write('This is a simple Streamlit app.')
-st.write(':smiley:')
+st.set_page_config(
+    page_title='Hello World!',
+    page_icon=':sunglasses:',
+)
 
-st.markdown("""
-## markdown header h2
+st.write('# Welcome to my app demo!')
 
-- unordered list 1
-- unordered list 2
+st.markdown(
+    """
+    I created a multi-page app to demonstrate some of the capabilities of
+    Streamlit.
 
-```python
-print('Hey!')
-```
+    :sparkles: Feel free to explore :mag: what you can create.
+    The possibilities are endless :infinity:!
 
-```sql
-SELECT *
-FROM table_name
-LIMIT 10;
+    :sparkles: The cool sidebar on the left :point_left: lets you
+        navigate between the different pages.
 
-```
+    :sparkles: Go ahead... try it out for yourself.
+    Don't take ***my*** word for it :wink:!
+"""
+)
 
 
-""")
+def ready():
+    """
+    a small example function
+    """
+    msg = st.toast("LET'S")
+    time.sleep(1)
+    msg.toast('GOOOOOOO...')
+    time.sleep(1)
+    msg.toast(':rocket: :rocket: :rocket: :rocket: :rocket:')
+
+
+if st.button('ARE YOU READY?'):
+    ready()
