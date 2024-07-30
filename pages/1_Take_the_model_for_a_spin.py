@@ -2,8 +2,8 @@
 P001 Take the model for a spin
 
 """
-from utils import create_pipe, get_preds
 import streamlit as st
+from utils import create_pipe, get_preds
 
 
 st.title('My Sentiment Analysis Model:')
