@@ -1,5 +1,7 @@
 pandas
+plotly
 seaborn
 transformers
 plotly-express
 tensorflow
+tf-keras
