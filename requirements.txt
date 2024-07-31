@@ -2,3 +2,4 @@ pandas
 seaborn
 transformers
 plotly-express
+tensorflow
