@@ -1,7 +1,4 @@
 pandas
-plotly
-streamlit
+seaborn
 transformers
 plotly-express
-tensorflow
-tf-keras
